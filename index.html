@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <!-- now it is resonsive to all size displays -->
+    <title>Pizaa Order Form </title>
+    <meta name="coder" content="Aryan Uknai">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js" defer></script>
+
+
+</head>
+<!-- starts body -->
+
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="title">
+            Sam's Pizza
+        </h1>
+    </header>
+    <!-- main part -->
+    <main>
+        <form method="POST">
+
+            <section class="media1">
+                <img src="./img/pexels-athena-2323183-photoaidcom-cropped.jpg" alt="pizza img" id="image_attributes">
+            </section>
+
+            <fieldset>
+
+                <!-- used fieldset to give a border -->
+
+                <legend>Let's Create Your Favorite Pizza</legend>
+                <!-- general line for buyers -->
+
+
+                <!-- section 1 for personal details -->
+                <section class="personaldetails">
+                    <label class="headings"><strong>First Name:</strong> </label>
+                    <input type="text" required autofocus placeholder="First Name">
+                    <!-- first name input --> <br>
+
+                    <label class="headings"><strong>Last Name:</strong> </label>
+                    <input type="text" required placeholder="Last Name">
+                    <!-- last name -->
+
+                    <br>
+                    <!-- Contact Number  -->
+                    <label class="headings"><strong> Contact:</strong> </label>
+                    <input type="tel" placeholder="Format: 1234567890" required name="Contact">
+                    <br>
+                    <!-- email -->
+                    <label class="headings"><strong> Email: </strong> </label>
+                    <input type="email" placeholder="johni@mail.com" required name="email">
+                </section><br>
+
+
+                <!-- section 2 for pizz choice -->
+                <section class="pizzachoice">
+
+
+                    <!-- size selection -->
+                    <label class="headings">Choose Pizza:</label>
+                    <select name="PizzaSize" id="size" required>
+                        <option value="">Select a size</option>
+                        <option value="slice">A slice</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xLarge">Extra Large</option>
+                    </select><br>
+
+                    <!-- toppings select -->
+                    <label class="headings">Toppings:</label>
+                    <div>
+                        <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="olives" name="toppings[]" value="olives">
+                        <label for="olives">Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="panner" name="toppings[]" value="panner">
+                        <label for="panner">Panner</label>
+                    </div><br>
+
+                    <!-- radio buttons for sausage selection -->
+                    <div class="sauce">
+                        <label class="headings"><strong>Choose a Sauces: &nbsp;</strong></label>
+                        <br>
+                        <input type="radio" name="Sauce" checked>
+                        <label>Pizza Sauce&nbsp;</label><br>
+                        <input type="radio" name="Sauce">
+                        <label>BBQ Sauce&nbsp;</label><br>
+
+                        <input type="radio" name="Sauce">
+                        <label>Hearty Marinara Sauce&nbsp;</label><br>
+                        <input type="radio" name="Sauce">
+                        <label>Ranch Dressing&nbsp;</label><br>
+                        <input type="radio" name="Sauce">
+                        <label>Garlic Sauce&nbsp;</label><br><br>
+
+                    </div>
+                    <label><strong>Quantity</strong> </label>
+                    <input type="number" placeholder="example:1">
+
+                    <br><br>
+                    <!-- any note they wanna put -->
+                    <label for="instructions">Special Instructions:</label><br>
+                    <textarea id="instructions" name="instructions" rows="4"></textarea>
+                </section>
+
+
+                <input type="submit" value="ORDER NOW!" class="submit" >
+            </fieldset>
+        </form>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p><a href="+1(705)5551111">Contact us</a> || <a href="samspizza12@gmail.com">Mail inquiry</a></p>
+        <p>© All right reserved</p>
+    </footer>
+</body>
+
+
+</html>
